@@ -15,6 +15,8 @@ public class CompetitorBehaviour : UnitBaseBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //TO DO 
+        // AI mechanism will be added
+        //Raycast system will be add for AI
     }
 }

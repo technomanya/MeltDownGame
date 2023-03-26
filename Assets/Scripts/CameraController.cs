@@ -9,12 +9,7 @@ public class CameraController : MonoBehaviour
 
     private float yaw; 
     private float pitch;
-    void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
 
-    // Update is called once per frame
     void LateUpdate()
     {
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;

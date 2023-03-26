@@ -47,6 +47,16 @@ public abstract class UnitBaseBehaviour : MonoBehaviour
         transform.localScale = defaultSize;
     }
 
+    public void Reset(Transform _parent)
+    {
+        rb.isKinematic = true;
+        transform.parent = _parent;
+        transform.localPosition = new Vector3(0,2.75f,0);
+        transform.localRotation = Quaternion.Euler(Vector3.zero);
+        transform.parent = null;
+        transform.localScale = defaultSize;
+        rb.isKinematic = false;
+    }
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.transform.tag);
